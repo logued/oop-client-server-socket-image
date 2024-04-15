@@ -4,6 +4,7 @@ import java.io.DataOutputStream;
 import java.io.FileOutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.sql.SQLOutput;
 
 // Server            April 2024
 // InputStream could also be buffered for efficiency (BufferedInputStream)
@@ -75,6 +76,7 @@ public class Server {
 
         System.out.println("File is Received");
 
+        System.out.println("Look in the images folder to see the transferred file: parrot_image_received.jpg");
         fileOutputStream.close();
     }
 }
