@@ -2,7 +2,13 @@ package org.example;        // March 2025
 import java.io.*;
 import java.net.Socket;
 
-// Client Server - transfer binary data
+// Client program
+// This clients attempts to connect to a Server (on a particular Port).
+// If successful, this client sends the following to the server:
+// 1. An 8-byte long integer value which is the count of the number of bytes
+//    in the image file, which is about to be sent.
+// 2. The contents of the image file is send in data chunks of size [4 x 1024]
+//
 
 public class Client {
     final static int SERVER_PORT = 1024;
